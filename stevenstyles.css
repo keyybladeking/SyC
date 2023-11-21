@@ -1,0 +1,480 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  :root {
+      --bg-color: #296B73;
+      --second-bg-color: #3E8C84;
+      --text-color: #D8F2F0;
+      --main-color: #0ef;
+      --container-color: #58b3a9;
+      --container-border-color: rgb(23, 65, 66);
+  }
+  
+  html {
+      font-size: 62.5%;
+      overflow-x: hidden;
+  }
+  
+  body {
+      background: var(--bg-color);
+      color: var(--text-color);
+  }
+  
+  section {
+      min-height: 50vh;
+      padding: 8rem 9% 1rem;
+  } 
+  
+  /*Affects the navigation bar*/
+  .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 2rem 9%;
+      background-color: var(--bg-color);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
+      background-image: url("beach.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+  
+  .logo {
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: var(--text-color);
+      cursor: default;
+  }
+  
+  /*The actual navigation bar text items (links to other pages)*/
+  .navbar a {
+    color: var(--text-color);
+    margin-left: 4rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+    border-bottom: 2px transparent solid;
+    transition: .3s;
+}
+
+  #menu-icon {
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none;
+ }
+
+  .history {
+    padding-top: 140px;
+  }
+
+  .history-container {
+    font-size: 20px;
+    background-color: var(--container-color);
+    border: 5px var(--container-border-color) solid;
+    border-radius: 20px;
+    padding: 50px;
+  }
+
+/*Start of CSS for timeline*/
+
+  .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+  }
+
+  .container {
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+  }
+
+  .tl-content {
+    padding: 20px 30px;
+    background: #fff;
+    position: relative;
+    font-size: 15px;
+    color: black;
+  }
+
+  .left-container {
+    left: 0;
+  }
+
+  .right-container {
+    left: 50%;
+  }
+
+  /*Resizes the icons on timeline and places them near the textboxes*/
+  .container img {
+    position: absolute;
+    width: 40px;
+    border-radius: 50%;
+    right: -20px;
+    top: 32px;
+    z-index: 10;
+  }
+
+  /*Important one here since this places the images on the right onto the timeline itself with the others*/
+  .right-container img {
+    left: -20px;
+  }
+
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: #fff;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: 1;
+    animation: moveline 6s linear forwards;
+  }
+
+  @keyframes moveline {
+    0% {
+      height: 0;
+    }
+
+    100% {
+      height: 100%;
+    }
+  }
+
+  .left-container-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #fff;
+    right: -15px;
+  }
+
+  .right-container-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #fff;
+    left: -15px;
+  }
+
+  @media screen and (max-width: 600px) {
+
+    .timeline {
+      margin: 50px auto;
+    }
+
+    .timeline::after {
+      left: 31px;
+    }
+
+    .container {
+      width: 100%;
+      padding-left: 80px;
+      padding-right: 25px;
+    }
+
+    .tl-content {
+      font-size: 13px;
+    }
+
+    .tl-content small {
+      margin-bottom: 10px;
+    }
+
+    .right-container {
+      left: 0;
+    }
+
+    .left-container img, .right-container img {
+      left: 10px;
+    }
+
+    .left-container-arrow, .right-container-arrow {
+      border-right: 15px solid #fff;
+      border-left: 0;
+      left: 15px;
+    }
+  }
+
+/*End of CSS for timeline*/
+
+/* row and column for the resume comparison photos*/
+  .row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 33.33%;
+    padding: 5px;
+  }
+
+  /*CSS for the table*/
+  .career-fields {
+    font-size: 2rem;
+  }
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  th {
+    background-color: #9ac4bf;
+  }
+  
+  td, th {
+    text-align: left;
+    padding: 8px;
+    border: 3px var(--container-border-color) solid;
+  }
+  
+  tr:nth-child(odd) {
+    background-color: var(--container-color);
+  }
+
+  tr:nth-child(even) {
+    background-color: #6ecfc7;
+  }
+
+/*Start of the mobile CSS for the table*/
+  @media only screen and (max-width: 600px)  {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+
+  /*
+	Label the data
+	*/
+
+	td:nth-of-type(1):before {
+    content: "Job Title";
+  }
+
+  td:nth-of-type(2):before {
+    content: "Job Description";
+  }
+
+  td:nth-of-type(3):before {
+    content: "Average Salary";
+  }
+}
+
+/*End of mobile CSS for table*/
+
+  /*Next 2 calls are for formatting the switching background colors of each section*/
+  .intro, .resume, .career-fields {
+    background-color: var(--bg-color);
+  }
+
+  .recruiters, .questions, .history {
+    background-color: var(--second-bg-color);
+    outline: 2rem black;
+  }
+
+  /*CSS for the actual resume images themselves*/
+  img {
+    border-radius: 10%;
+    justify-content: center;
+    display: flex;
+
+    /*The following 2 help with media screen re-sizing*/
+    width: 100%;
+    height: auto;
+  }
+
+  .header-div {
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  .content-div {
+    font-size: 2rem;
+    text-align: center;
+    padding: 35px;
+  }
+
+/*Start of CSS for intro container*/
+
+  .intro-container {
+    background-color: var(--container-color);
+    border: 5px var(--container-border-color) solid;
+    border-radius: 20px;
+  }
+
+/*End of CSS for intro container*/
+
+/*Start of recruiters container*/
+
+  .recruiter-container {
+    background-color: var(--container-color);
+    border: 5px var(--container-border-color) solid;
+    border-radius: 20px;
+  }
+
+/*End of recruiters CSS*/
+
+/*Start of CSS for resume containers*/
+
+  .resume-container {
+    background-color: var(--container-color);
+    border: 5px var(--container-border-color) solid;
+    border-radius: 20px;
+  }
+
+/*Start of CSS for resume info boxes*/
+
+  .g-resume-container {
+    width: 100%;
+    max-width: 150rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .g-resume-content {
+    background-color: var(--container-color);
+    border: 5px var(--container-border-color) solid;
+    border-radius: 20px;
+    padding: 3rem;
+    font-size: 15px;
+    flex-basis: calc(50% - 6rem);
+    margin: 3rem;
+    box-sizing: border-box;
+  }
+
+  .b-resume-container {
+    width: 100%;
+    max-width: 150rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .b-resume-content {
+    background-color: var(--container-color);
+    border: 5px var(--container-border-color) solid;
+    border-radius: 20px;
+    padding: 3rem;
+    font-size: 15px;
+    flex-basis: calc(50% - 6rem);
+    margin: 3rem;
+    box-sizing: border-box;
+  }
+/*End of CSS for resume info boxes*/
+
+/*Start of the CSS for the Interview Questions section*/
+
+.question dt {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.question-container {
+    background-color: var(--container-color);
+    border: 5px var(--container-border-color) solid;
+    border-radius: 20px;
+}
+
+/*CSS for the NavBar hamburger*/
+
+@media (max-width: 1200px) {
+  html {
+      font-size: 55%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+      padding: 2rem 3%;
+  }
+
+  section {
+      padding: 10rem 3% 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-icon {
+      display: block;
+  }
+
+  .navbar {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      padding: 1rem 3%;
+      background: var(--bg-color);
+      border-top: .1rem solid rgba(0,0,0,.2);
+      box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+      display: none;
+  }
+
+  .navbar.active{
+      display: block;
+  }
+
+  .navbar a {
+      display: block;
+      font-size: 2rem;
+      margin: 3rem 0;
+  }
+}
+
+/*End of CSS for NavBar hamburger*/
