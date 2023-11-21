@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-color: #296B73 ;
+    --second-bg-color:#3E8C84 ;
+    --text-color: #D8F2F0;
+    --main-color: #75DDDD;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: 'Lexend Deca', sans-serif;
+  width: auto; 
+  margin: auto;
+  color: #D8F2F0; 
+}
+
+.sub-cybertitle {
+  max-width: auto;
+  margin: auto;
+  font-size: 2rem;
+  padding-top: 150px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+  text-align: center;
+  font-family: 'Lexend Deca', sans-serif;		  
+}
+  
+  /* section {
+  max-width: 500px;
+  margin: auto;
+  border: 5px solid #3E8C84;
+  text-align: center;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 1.75rem;
+} */
+
+.cyber-news1-container {
+  max-width: 500px;
+  margin: auto;
+  /* border: 10px solid #3E8C84; */
+  text-align: center;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 1.75rem;
+}
+
+.cyber-news1-block {
+  /* background-color: var(--bg-color); */
+  background-image: url(cybersecurity.png);
+  background-position: center 45%;
+	background-repeat: no-repeat;
+	background-size: cover;
+    border: 5px solid #3E8C84;
+    border-radius: 50px;
+    padding: 2rem;
+    flex-basis: auto;
+    margin: 3.5rem;
+    box-sizing: border-box;
+}
+  
+ .cyber-news2-container {
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 1.75rem;
+}
+
+.cyber-news2-block {
+  /* background-color: var(--bg-color); */
+  background-image: url(cybersecurity.png);
+  background-position: center 45%;
+	background-repeat: no-repeat;
+	background-size: cover;
+    border: 5px solid #3E8C84;
+    border-radius: 50px;
+    padding: 2rem;
+    flex-basis: auto;
+    margin: 3.5rem;
+    box-sizing: border-box;
+}
+
+.cyber-news3-container {
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 1.75rem;
+} 
+
+.cyber-news3-block {
+  /* background-color: var(--bg-color); */
+  background-image: url(cybersecurity.png);
+  background-position: center 45%;
+	background-repeat: no-repeat;
+	background-size: cover;
+    border: 5px solid #3E8C84;
+    border-radius: 50px;
+    padding: 2rem;
+    flex-basis: auto;
+    margin: 3.5rem;
+    box-sizing: border-box;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 9%;
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  background-image: url("beach.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+    cursor: default;
+}
+
+.navbar a {
+    color: var(--text-color);
+    margin-left: 4rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+    border-bottom: 2px transparent solid;
+    transition: .3s;
+}
+
+table {
+  padding: 10px;
+  border-collapse: collapse;
+  width: auto;
+  text-align: center-left;
+}
+
+td, th {
+  border: none;
+  padding-top: 20px;
+}
+@media (max-width: 1200px) {
+  html {
+      font-size: 55%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+      padding: 2rem 3%;
+  }
+
+  section {
+      padding: 10rem 3% 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-icon {
+      display: block;
+  }
+
+  .navbar {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      padding: 1rem 3%;
+      background: var(--bg-color);
+      border-top: .1rem solid rgba(0,0,0,.2);
+      box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+      display: none;
+  }
+
+  .navbar.active{
+      display: block;
+  }
+
+  .navbar a {
+      display: block;
+      font-size: 2rem;
+      margin: 3rem 0;
+  }
+}

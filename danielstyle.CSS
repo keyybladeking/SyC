@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+  }
+:root {
+    --bg-color: #296B73 ;
+    --second-bg-color:#3E8C84 ;
+    --text-color:#D8F2F0;
+    --main-color: #75DDDD;
+} 
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-image: url("beach.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+    cursor: default;
+}
+.navbar a {
+    color: var(--text-color);
+    margin-left: 4rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+    border-bottom: 2px transparent solid;
+    transition: .3s;
+}
+
+#menu-icon {
+   font-size: 3.6rem;
+   color: var(--text-color);
+   display: none;
+} 
+.courses1 {
+    background-color: var(--second-bg-color);
+    color: var(--text-color);
+
+}
+.courses2 {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+.courses3 {
+    background-color: var(--second-bg-color);
+    color: var(--text-color);
+}
+.courses4 {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+.courseheading{
+    height: auto;
+    padding-top: 12.5rem;
+    color: var(--text-color);
+    text-align: center;
+    font-size: 25px;
+    background-color: var(--bg-color);
+}
+.flowchart {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    text-align: center;
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+
+}
+.flowchart img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    max-width: 90%;
+    transition: 1s ease;
+    border-radius: 75px 75px 75px 75px ;
+}
+.flowchart img:hover{
+    -webkit-transform: scale(1.17);
+    -ms-transform: scale(1.17);
+    transform: scale(1.17);
+    transition: 1s ease;
+}
+.heading{
+    text-align: center;
+    font-size: 45px;
+    color: var(--text-color);
+    background-color: var(--second-bg-color);
+}
+.heading1 {
+    text-align: center;
+    font-size: 45px;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+.heading2 {
+    text-align: center;
+    font-size: 45px;
+    color: var(--text-color);
+    background-color: var(--second-bg-color);
+}
+.heading3 {
+    text-align: center;
+    font-size: 45px;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+.courses{
+    color: var(--text-color);
+}
+.course-container {
+    width: auto;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: var(--second-bg-color);
+}
+.course-block {
+    background-color: var(--bg-color);
+    border: 5px solid var(--main-color);
+    border-radius: 50px;
+    padding: 2rem;
+    flex-basis: auto;
+    margin: 3.5rem;
+    box-sizing: border-box;
+}
+.course-block h2 {
+    font-size: 1.9rem;
+    margin: .5rem;
+}
+
+.course-block p {
+    font-size: 1.5rem ;
+}
+.course-container1 {
+    width: auto;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: var(--bg-color);
+}
+.course-block1 {
+    background-color: var(--second-bg-color);
+    border: 5px solid var(--main-color);
+    border-radius: 50px;
+    padding: 2rem;
+    flex-basis: auto;
+    margin: 3.5rem;
+    box-sizing: border-box;
+}
+.course-block1 h2 {
+    font-size: 1.9rem;
+    margin: .5rem;
+}
+
+.course-block1 p {
+    font-size: 1.5rem ;
+}
+
+.coursetoolslist {
+    font-size: 1.7rem;
+}
+
+.coursetoolslist li {
+    margin: 1.5rem;
+}
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header {
+        padding: 2rem 3%;
+    }
+
+    section {
+        padding: 10rem 3% 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0,0,0,.2);
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+        display: none;
+    }
+
+    .navbar.active{
+        display: block;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+}

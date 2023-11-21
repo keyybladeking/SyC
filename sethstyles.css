@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-color: #296B73;
+    --second-bg-color: #3E8C84;
+    --text-color: #D8F2F0;
+    --main-color: #0ef;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+section {
+    min-height: 50vh;
+    padding: 9rem 9% 1rem;
+    border-radius: 10px;
+} 
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-image: url("beach.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+    cursor: default;
+}
+
+
+
+.navbar a {
+    color: var(--text-color);
+    margin-left: 4rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+    border-bottom: 2px transparent solid;
+    transition: .3s;
+}
+
+#menu-icon {
+   font-size: 3.6rem;
+   color: var(--text-color);
+   display: none;
+}
+
+
+
+.intro {
+    background-color: var(--second-bg-color);
+}
+
+.sub-head {
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    padding-bottom: 6rem;
+}
+
+#introtexts {
+    max-width: 800px; 
+    margin: 0 auto;  
+    padding: 10px; 
+    text-align: justify; 
+    box-sizing: border-box; 
+    text-align: center;
+}
+
+#introtexts2 {
+    max-width: 1500px; 
+    margin: 0 auto;  
+    padding: 10px; 
+    text-align: justify; 
+    box-sizing: border-box; 
+    text-align: center;
+}
+
+/*main page styles*/
+
+.mission{
+   font-size: 2.5rem; 
+}
+
+.intromp {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: var(--second-bg-color);
+}
+
+.team-section {
+    width: 48%; 
+    margin-bottom: 20px;
+}
+
+.team-section img {
+    max-width: 250px; /* Adjust this value to your preferred maximum width */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 25%;
+    overflow: hidden;
+}
+
+.team-section p {
+    text-align: center;
+    padding: .5rem;
+    font-size: 1.5rem ;
+    color: var(--text-color);
+}
+
+.contact {
+    text-align: center;
+    padding: 50px 0;
+    background-color: var(--bg-color); 
+}
+
+.headingc {
+    color: var(--text-color);
+    font-size: 3.5rem;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.input-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    width: 48%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+.send-btn {
+    background-color: var(--second-bg-color);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.send-btn:hover {
+    background-color: #45a049; 
+}
+
+
+.A{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 20px;
+}   
+
+.A img {
+    max-width: 40%;
+    height: auto;
+    margin-bottom: 20px; /* Add space below the image */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.A h2, .A p {
+    text-align: center; /* Center-align the text */
+}
+
+.A p {
+    font-size: 16px;
+    max-width: 55%;
+}
+
+.A a {
+    font-size: 16px;
+    text-decoration: underline;
+    color: var(--text-color);
+    padding: .5rem;
+}
+
+.A h2{
+    font-size: 25px;
+}
+
+.sec{
+    display: flex;
+    flex-direction: column; /* Change to a vertical layout */
+    align-items: center;
+    padding: 20px;
+    background-color: var(--bg-color)
+}
+  
+.sec img {
+    max-width: 40%;
+    height: auto;
+    margin-bottom: 20px; /* Add space below the image */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+  
+.sec h2, .sec p {
+    text-align: center; /* Center-align the text */
+}
+  
+.sec p {
+    font-size: 16px;
+    max-width: 55%;
+}   
+  
+.sec a {
+    font-size: 16px;
+    text-decoration: underline;
+    color: var(--text-color);
+     padding: .5rem;
+}
+
+.sec h2{
+    font-size: 25px;
+}
+
+.net{
+    display: flex;
+    flex-direction: column; /* Change to a vertical layout */
+    align-items: center;
+    padding: 20px;
+}
+  
+.net img {
+    max-width: 40%;
+    height: auto;
+    margin-bottom: 20px; /* Add space below the image */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+  
+.net h2, .net p {
+    text-align: center; /* Center-align the text */
+}
+  
+.net p {
+    font-size: 16px;
+    max-width: 55%;
+}
+  
+.net a {
+    font-size: 16px;
+    text-decoration: underline;
+    color: var(--text-color);
+    padding: .5rem;
+}
+
+.net h2 {
+    font-size: 25px;
+}
+
+.questions {
+    background-color: var(--second-bg-color); 
+    padding: 20px; 
+    border-radius: 10px; 
+    margin: 20px 0; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+  
+.questions h2 {
+    font-size: 24px; 
+    margin-bottom: 20px; 
+    text-decoration: underline;
+}
+  
+  /* Style the questions and answer choices */
+.questions p {
+    font-size: 16px; 
+}
+  
+.questions input[type="radio"] {
+    margin-right: 10px; 
+}
+  
+  /* Style the submit button */
+.questions input[type="submit"] {
+    background-color: #007bff; /* Set a blue background color for the button */
+    color: #fff; /* Set text color to white */
+    padding: 10px 20px; /* Add padding to the button */
+    border: none; /* Remove button borders */
+    border-radius: 5px; /* Add rounded corners to the button */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s; /* Add a smooth hover effect */
+}
+  
+.questions input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+}
+
+label{
+    font-size: 16px;
+}
+
+
+
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header {
+        padding: 2rem 3%;
+    }
+
+    section {
+        padding: 10rem 3% 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0,0,0,.2);
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+        display: none;
+    }
+
+    .navbar.active{
+        display: block;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+}
