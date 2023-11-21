@@ -14,7 +14,10 @@
     --text-color:#D8F2F0;
     --main-color: #75DDDD;
 } 
-
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
 .header {
     position: fixed;
     top: 0;
@@ -70,7 +73,7 @@
 }
 .courseheading{
     height: auto;
-    padding-top: 12.5rem;
+    padding-top: 8rem;
     color: var(--text-color);
     text-align: center;
     font-size: 25px;
@@ -80,8 +83,8 @@
     background-color: var(--bg-color);
     color: var(--text-color);
     text-align: center;
-    padding-top: 4.5rem;
-    padding-bottom: 4.5rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
 
 }
 .flowchart img {
@@ -89,14 +92,14 @@
     margin-left: auto;
     margin-right: auto;
     height: auto;
-    max-width: 90%;
+    max-width: 100%;
     transition: 1s ease;
     border-radius: 75px 75px 75px 75px ;
 }
 .flowchart img:hover{
-    -webkit-transform: scale(1.17);
-    -ms-transform: scale(1.17);
-    transform: scale(1.17);
+    -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    transform: scale(1.15);
     transition: 1s ease;
 }
 .heading{
